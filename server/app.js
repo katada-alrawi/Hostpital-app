@@ -12,7 +12,8 @@ import messageRouter from "./router/messageRouter.js";
 
 
 const app = express();
-config({ path: "./config/config.env" });
+// config({ path: "./config/config.env" });
+config({ path: "./server/config/config.env" });
 
 app.use(
   cors({
