@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import baseUrl from "../config/api";
 
 const MessageForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -14,7 +15,7 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          "http://localhost:4000/api/v1/message/send",
+          baseUrl+"/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,

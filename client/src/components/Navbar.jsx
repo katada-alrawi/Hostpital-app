@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Context } from "../main";
+import baseUrl from "../config/api";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -11,7 +12,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("http://localhost:4000/api/v1/user/patient/logout", {
+      .get(baseUrl+"/api/v1/user/patient/logout", {
         withCredentials: true,
       })
       .then((res) => {
