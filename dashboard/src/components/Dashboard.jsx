@@ -62,9 +62,7 @@ const Dashboard = () => {
                 <h5>{admin && `${admin.firstName} ${admin.lastName}`} </h5>
               </div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Facilis, nam molestias. Eaque molestiae ipsam commodi neque.
-                Assumenda repellendus necessitatibus itaque.
+              Welcome to the Dashboard! Your gateway to streamlined management and enhanced patient care. Admins and doctors, dive into powerful tools and insights for seamless operations and improved health outcomes. Lets optimize together!
               </p>
             </div>
           </div>

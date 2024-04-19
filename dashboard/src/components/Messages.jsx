@@ -24,7 +24,7 @@ const Messages = () => {
   }, []);
 
   if (!isAuthenticated) {
-    return <Navigate to={"/login"} />;
+   // return <Navigate to={"/login"} />;
   }
 
   return (
