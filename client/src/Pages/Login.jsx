@@ -17,9 +17,10 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
+      const URL =  baseUrl+"/api/v1/user/login"
       await axios
         .post(
-          baseUrl+"/api/v1/user/login",
+         URL,
           { email, password, confirmPassword, role: "Patient" },
           {
             withCredentials: true,
